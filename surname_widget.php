@@ -28,7 +28,7 @@ class Surname_Widget extends WP_Widget {
 	/**
 	 * Widget setup.
 	 */
-	function Surname_Widget() {
+	 public function __construct() {
 		/* Widget settings. */
 		$widget_ops = array( 'classname' => 'rpSurnameWidget', 'description' => __('An widget that displays the top X surnames in rootspersona.', 'rootspersona') );
 
