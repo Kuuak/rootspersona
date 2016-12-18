@@ -36,7 +36,7 @@ class Surname_Widget extends WP_Widget {
 		$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'rp_surname_widget' );
 
 		/* Create the widget. */
-		$this->WP_Widget( 'rp_surname_widget', __('Surname Widget', 'rootspersona'), $widget_ops, $control_ops );
+		parent::__construct( 'rp_surname_widget', __('Surname Widget', 'rootspersona'), $widget_ops, $control_ops );
 	}
 
 	/**
