@@ -15,7 +15,7 @@ class RP_Option_Page_Builder {
         $block = "<div class='wrap'><a href='http://rootspersona.com'><img src='" . $banner . "'></img></a>"
                 . "<div style='padding-left:10px;padding-top:5px;font-size:larger;'>Version " . $options['version'];
         
-        if($options['hide_donation'] != '1') {
+        if( !isset($options['hide_donation']) || $options['hide_donation'] != '1') {
                 $block .= " <span style='display:inline-block;float:right;padding-right:1em;'>"
                 . '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ANLEXXNXKFN9N">'
                 . '<img src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" mce_src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" alt="Donations welcome"></a>'
